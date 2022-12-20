@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <header>
+        <h1>Weather app</h1>
+        <form class="location-form" onSubmit="return false">
+            <label for="location-input">Location:</label>
+            <input type="text" id="location-input" name="" value="" size="14" />
+            <button class="submit-location" type="button"></button>
+        </form>
+    </header>
+    <main>
+        <div class="container">
+            <h2 id="location"></h2>
+            <div id="clock">
+               
+            </div>
+            <div class="main-icon-container">
+                <img id="main-icon" class="icon" src="#" alt="icon descriptive of the weather">
+            </div>
+            <div class="current-temp"></div>
+            <div class="wind-speed"></div>
+            <div class="coming-days"></div>
+        </div>
+    </main>
+   
+</body>
+</html>

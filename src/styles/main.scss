@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #2fa8cc;
+$secondary-color: #f4f4f4;
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+h1 {
+  font-size: 30px;
+}
+
+h2{
+  padding: 0;
+  margin: 0;
+
+}
+
+.location-form{
+  display: flex;
+  align-items: center;
+}
+
+.submit-location{
+  background-image: url('/src/assets/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  border: none;
+  margin-left: 2px;
+  mix-blend-mode: color-burn;
+  border-radius: 20%;
+}
+
+.submit-location:active{
+  mix-blend-mode: normal;
+}
+
+.current.weather{
+  background-color: black;
+}
+
+.coming-days{
+  background-color: whitesmoke;
+}
