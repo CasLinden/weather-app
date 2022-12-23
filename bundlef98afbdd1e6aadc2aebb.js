@@ -23,7 +23,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n  background-color: #41463D;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.page-wrapper {\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: #1CFEBA;\n}\n\n.search-container {\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input {\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus {\n  outline: white;\n  border: white;\n}\n\nmain {\n  display: grid;\n  gap: 12px;\n  padding: 12px;\n}\n\n.heading-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper {\n  display: flex;\n  justify-content: space-between;\n}\n\nh2 {\n  font-size: 17px;\n  color: #95F2D9;\n}\n\n#clock {\n  font-family: \"Chivo Mono\", monospace;\n}\n\n.weather-traits-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n}\n\n.weather-trait-container {\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon {\n  height: 100px;\n  width: 100px;\n}\n\n.icon {\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp {\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit {\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n}\n\n.wind {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid {\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\" \"W I E\" \". S .\";\n}\n\n.N {\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid > div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.compass-container {\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow {\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container {\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon {\n  height: 1rem;\n  width: 1rem;\n  color: #B8CDF8;\n}\n\n.humidity {\n  transform: translateY(15px);\n  font-size: 20px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,iBAAA;AAPF;;AAUA;EACI,yBAbU;EAcV,iCAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAPJ;;AAUA;EACE,YAAA;EACA,gBAAA;AAPF;;AAYA;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,SAAA;EACA,yBAlCY;AAyBd;;AAWA;EACE,aAAA;EACA,oCAAA;EACA,mBAAA;EACA,kBAAA;AARF;;AAWA;EACE,YAAA;EACA,6BAAA;EACA,iBAAA;EACA,eAAA;AARF;;AAWA;EACE,cAAA;EACA,aAAA;AARF;;AAaA;EACC,aAAA;EACA,SAAA;EACA,aAAA;AAVD;;AAaA;EACE,aAAA;EACA,sBAAA;AAVF;;AAaA;EACE,aAAA;EACA,8BAAA;AAVF;;AAaA;EACE,eAAA;EACA,cAAA;AAVF;;AAYA;EACE,oCAAA;AATF;;AAcA;EACE,aAAA;EACA,2DAAA;EACA,QAAA;AAXF;;AAeA;EACE,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAZF;;AAeA;EACE,aAAA;EACA,YAAA;AAZF;;AAeA;EACE,YAAA;EACA,WAAA;AAZF;;AAmBA;EACE,gCAAA;EACA,eAAA;AAhBF;;AAmBA;EACE,gCAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAhBF;;AAsBA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,SAAA;AAnBF;;AAsBA;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,oCAAA;EACA,iCAAA;EACA,4CAAA;AAnBF;;AAwBA;EACE,YAAA;AArBF;;AAwBA;EACE,YAAA;AArBF;;AAwBA;EACE,YAAA;AArBF;;AAwBA;EACE,YAAA;AArBF;;AAwBA;EACE,YAAA;AArBF;;AAwBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AArBF;;AAuBA;EACE,4BAAA;EACA,kBAAA;EACA,WAAA;AApBF;;AAuBA;EACE,UAAA;EACA,kBAAA;AApBF;;AAuBA;EACE,aAAA;EACA,QAAA;EACA,yBAAA;EACA,eAAA;AApBF;;AAuBA;EACE,YAAA;EACA,WAAA;EACA,cArMc;AAiLhB;;AAyBA;EACE,2BAAA;EACA,eAAA;AAtBF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');\n\n$primary-color: #B8CDF8;\n$secondary-color: #9D8DF1;\n$third-color: #41463D;\n$fourth-color:#95F2D9;\n$fifth-color: #1CFEBA;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n    background-color: $third-color;\n    font-family: 'Roboto', sans-serif;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.page-wrapper{\n  width: 100vw;\n  max-width: 700px;\n}\n\n// ================= START OF BLOCK ICON ========================\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: $fifth-color;\n}\n.search-container{\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input{\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus{\n  outline: white;\n  border: white;\n}\n\n// ================= START OF MAIN ========================\n\nmain {\n display: grid;\n gap: 12px;\n padding: 12px;\n}\n\n.heading-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper{\n  display: flex;\n  justify-content: space-between;\n}\n\nh2{\n  font-size: 17px;\n  color: #95F2D9;\n}\n#clock{\n  font-family: 'Chivo Mono', monospace;\n}\n\n// ================= START OF ICON BLOCK ========================\n\n.weather-traits-wrapper{\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n\n}\n\n.weather-trait-container{\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon{\n  height: 100px;\n  width: 100px;\n}\n\n.icon{\n  height: 80px;\n  width: 80px;\n}\n\n// ================= START OF TEMP BLOCK ========================\n.temperature-icon{\n  \n}\n.current-temp{\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit{\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n  \n}\n\n// ================= START OF WIND BLOCK ========================\n\n.wind{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid{\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\"\n                       \"W I E\"\n                       \". S .\";\n}\n\n.N{\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid>div{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.compass-container{\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow{\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container{\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon{\n  height: 1rem;\n  width: 1rem;\n  color: $primary-color;\n}\n\n// ================= START OF HUMIDITY BLOCK ========================\n\n.humidity{\n  transform: translateY(15px);\n  font-size: 20px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n  background-color: #41463D;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.page-wrapper {\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: #1CFEBA;\n}\n\n.search-container {\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input {\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus {\n  outline: white;\n  border: white;\n}\n\nmain {\n  display: grid;\n  gap: 12px;\n  padding: 12px;\n}\n\n.heading-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper {\n  display: flex;\n  justify-content: space-between;\n}\n\nh2 {\n  font-size: 17px;\n  color: #95F2D9;\n}\n\n#clock {\n  font-family: \"Chivo Mono\", monospace;\n}\n\n.weather-traits-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n}\n\n.weather-trait-container {\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon {\n  height: 100px;\n  width: 100px;\n}\n\n.icon {\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp {\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit {\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n}\n\n.wind {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid {\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\" \"W I E\" \". S .\";\n}\n\n.N {\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid > div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.compass-container {\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow {\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container {\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon {\n  height: 1rem;\n  width: 1rem;\n  color: #B8CDF8;\n}\n\n.humidity {\n  transform: translateY(15px);\n  font-size: 20px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,iBAAA;AAPF;;AAUA;EACI,yBAbU;EAcV,iCAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAPJ;;AAUA;EACE,YAAA;EACA,gBAAA;AAPF;;AAYA;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,SAAA;EACA,yBAlCY;AAyBd;;AAWA;EACE,aAAA;EACA,oCAAA;EACA,mBAAA;EACA,kBAAA;AARF;;AAWA;EACE,YAAA;EACA,6BAAA;EACA,iBAAA;EACA,eAAA;AARF;;AAWA;EACE,cAAA;EACA,aAAA;AARF;;AAaA;EACC,aAAA;EACA,SAAA;EACA,aAAA;AAVD;;AAaA;EACE,aAAA;EACA,sBAAA;AAVF;;AAaA;EACE,aAAA;EACA,8BAAA;AAVF;;AAaA;EACE,eAAA;EACA,cAAA;AAVF;;AAYA;EACE,oCAAA;AATF;;AAcA;EACE,aAAA;EACA,2DAAA;EACA,QAAA;AAXF;;AAeA;EACE,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAZF;;AAeA;EACE,aAAA;EACA,YAAA;AAZF;;AAeA;EACE,YAAA;EACA,WAAA;AAZF;;AAiBA;EACE,gCAAA;EACA,eAAA;AAdF;;AAiBA;EACE,gCAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAdF;;AAoBA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,SAAA;AAjBF;;AAoBA;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,oCAAA;EACA,iCAAA;EACA,4CAAA;AAjBF;;AAsBA;EACE,YAAA;AAnBF;;AAsBA;EACE,YAAA;AAnBF;;AAsBA;EACE,YAAA;AAnBF;;AAsBA;EACE,YAAA;AAnBF;;AAsBA;EACE,YAAA;AAnBF;;AAsBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAnBF;;AAqBA;EACE,4BAAA;EACA,kBAAA;EACA,WAAA;AAlBF;;AAqBA;EACE,UAAA;EACA,kBAAA;AAlBF;;AAqBA;EACE,aAAA;EACA,QAAA;EACA,yBAAA;EACA,eAAA;AAlBF;;AAqBA;EACE,YAAA;EACA,WAAA;EACA,cAnMc;AAiLhB;;AAuBA;EACE,2BAAA;EACA,eAAA;AApBF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');\n\n$primary-color: #B8CDF8;\n$secondary-color: #9D8DF1;\n$third-color: #41463D;\n$fourth-color:#95F2D9;\n$fifth-color: #1CFEBA;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n    background-color: $third-color;\n    font-family: 'Roboto', sans-serif;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.page-wrapper{\n  width: 100vw;\n  max-width: 700px;\n}\n\n// ================= START OF BLOCK ICON ========================\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: $fifth-color;\n}\n.search-container{\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input{\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus{\n  outline: white;\n  border: white;\n}\n\n// ================= START OF MAIN ========================\n\nmain {\n display: grid;\n gap: 12px;\n padding: 12px;\n}\n\n.heading-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper{\n  display: flex;\n  justify-content: space-between;\n}\n\nh2{\n  font-size: 17px;\n  color: #95F2D9;\n}\n#clock{\n  font-family: 'Chivo Mono', monospace;\n}\n\n// ================= START OF ICON BLOCK ========================\n\n.weather-traits-wrapper{\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n\n}\n\n.weather-trait-container{\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon{\n  height: 100px;\n  width: 100px;\n}\n\n.icon{\n  height: 80px;\n  width: 80px;\n}\n\n// ================= START OF TEMP BLOCK ========================\n\n.current-temp{\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit{\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n  \n}\n\n// ================= START OF WIND BLOCK ========================\n\n.wind{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid{\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\"\n                       \"W I E\"\n                       \". S .\";\n}\n\n.N{\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid>div{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.compass-container{\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow{\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container{\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon{\n  height: 1rem;\n  width: 1rem;\n  color: $primary-color;\n}\n\n// ================= START OF HUMIDITY BLOCK ========================\n\n.humidity{\n  transform: translateY(15px);\n  font-size: 20px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -598,78 +598,90 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function typeInLoc() {
-  document.getElementById('location-input').addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      let inputField = document.getElementById("location-input").value;
-      document.getElementById("location-input").value = "";
-      (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.setNewLoc)(inputField);
-    }
-  });
+  const input = document.getElementById("location-input")
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        let inputField = document.getElementById("location-input").value;
+        document.getElementById("location-input").value = "";
+        (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.setNewLoc)(inputField);
+        setTimeout(() => {
+          input.blur()
+        }, 100);
+      }
+    });
 }
-typeInLoc()
+typeInLoc();
 
-let Kelvin
+let Kelvin;
 
 async function displayCurrentWeather() {
-  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)()
+  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)();
   displayWeatherDescription(data.weather[0].description);
-  displayName(data.name, data.sys.country)
-  ;(0,_clock__WEBPACK_IMPORTED_MODULE_1__.displayTime)(data.timezone)
+  displayName(data.name, data.sys.country);
+  (0,_clock__WEBPACK_IMPORTED_MODULE_1__.displayTime)(data.timezone);
   displayMainIcon(data.weather[0].icon);
-  displayTemp(data.main.temp)
-  displayWind(data.wind.speed, data.wind.deg)
-  displayHumidity(data.main.humidity)
+  displayTemp(data.main.temp);
+  displayWind(data.wind.speed, data.wind.deg);
+  displayHumidity(data.main.humidity);
 }
 
 function displayWeatherDescription(desc) {
-  document.getElementById('description').textContent = desc.split(' ').map(part => part[0].toUpperCase() + part.slice(1)).join(' ')
+  document.getElementById("description").textContent = desc
+    .split(" ")
+    .map((part) => part[0].toUpperCase() + part.slice(1))
+    .join(" ");
 }
 
 function displayName(name, country) {
-  document.getElementById("location").textContent = `${name.toUpperCase()} ${country}`;
+  document.getElementById(
+    "location"
+  ).textContent = `${name.toUpperCase()} ${country}`;
 }
 
 function displayMainIcon(icon) {
-  document.getElementById('main-icon').src = `http://openweathermap.org/img/wn/${icon}@2x.png`
+  document.getElementById(
+    "main-icon"
+  ).src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 }
 
 let tempUnit = "Celsius";
-
 
 function toggleTempUnit() {
   tempUnit === "Celsius" ? (tempUnit = "Fahrenheit") : (tempUnit = "Celsius");
 }
 
-function displayTemp(KelvinTemp) { 
-  Kelvin = KelvinTemp
+function displayTemp(KelvinTemp) {
+  Kelvin = KelvinTemp;
   if (tempUnit === "Celsius") {
-     var localtemp = `${Math.round(KelvinTemp - 273.15)}°C`;
-   } else if (tempUnit === "Fahrenheit") {
-     var localtemp = `${Math.round(((KelvinTemp - 273.15) * 9) / 5 + 32)}°F`;
+    var localtemp = `${Math.round(KelvinTemp - 273.15)}°C`;
+  } else if (tempUnit === "Fahrenheit") {
+    var localtemp = `${Math.round(((KelvinTemp - 273.15) * 9) / 5 + 32)}°F`;
   }
-  document.querySelector('.temperature-icon').src = _assets_temperature_icon_svg__WEBPACK_IMPORTED_MODULE_2__
-  document.querySelector('.current-temp').textContent = localtemp
+  document.querySelector(".temperature-icon").src = _assets_temperature_icon_svg__WEBPACK_IMPORTED_MODULE_2__;
+  document.querySelector(".current-temp").textContent = localtemp;
 }
 
-document.querySelector('.other-temp-unit').addEventListener('click', () => {
-  toggleTempUnit()
-  displayTemp(Kelvin)
+document.querySelector(".other-temp-unit").addEventListener("click", () => {
+  toggleTempUnit();
+  displayTemp(Kelvin);
   document.querySelector(".other-temp-unit");
-
-})
+});
 
 function displayWind(speed, deg) {
-  document.querySelector('.wind-speed').textContent = `${Math.round(speed*3.6)} km/h`
-  document.querySelector('.wind-icon').src = _assets_wind_speed_svg__WEBPACK_IMPORTED_MODULE_4__
-  const arrow = document.getElementById("compass-arrow")
+  document.querySelector(".wind-speed").textContent = `${Math.round(
+    speed * 3.6
+  )} km/h`;
+  document.querySelector(".wind-icon").src = _assets_wind_speed_svg__WEBPACK_IMPORTED_MODULE_4__;
+  const arrow = document.getElementById("compass-arrow");
   arrow.src = _assets_compass_arrow_svg__WEBPACK_IMPORTED_MODULE_3__;
-  arrow.style.transform ="rotate(" + deg + "deg)";
+  arrow.style.transform = "rotate(" + deg + "deg)";
 }
 
 function displayHumidity(hum) {
-  document.querySelector('.humidity').textContent = hum
-  document.querySelector('.humidity-icon').src = _assets_humidity_icon_svg__WEBPACK_IMPORTED_MODULE_5__
+  document.querySelector(".humidity").textContent = hum;
+  document.querySelector(".humidity-icon").src = _assets_humidity_icon_svg__WEBPACK_IMPORTED_MODULE_5__;
 }
+
 
 
 
@@ -944,4 +956,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle776577f7f4db7a140329.js.map
+//# sourceMappingURL=bundlef98afbdd1e6aadc2aebb.js.map
