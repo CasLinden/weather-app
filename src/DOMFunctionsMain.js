@@ -5,7 +5,6 @@ import arrowIcon from "./assets/compass-arrow.svg"
 import windIcon from "./assets/wind-speed.svg"
 import humidityIcon from "./assets/humidity-icon.svg"
 
-
 function typeInLoc() {
   document.getElementById('location-input').addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -21,7 +20,6 @@ let Kelvin
 
 async function displayCurrentWeather() {
   let data = await getCurrentWeather()
-  console.log(data)
   displayWeatherDescription(data.weather[0].description);
   displayName(data.name, data.sys.country)
   displayTime(data.timezone)
@@ -60,6 +58,13 @@ function displayTemp(KelvinTemp) {
   document.querySelector('.temperature-icon').src = tempIcon
   document.querySelector('.current-temp').textContent = localtemp
 }
+
+document.querySelector('.other-temp-unit').addEventListener('click', () => {
+  toggleTempUnit()
+  displayTemp(Kelvin)
+  document.querySelector(".other-temp-unit");
+
+})
 
 function displayWind(speed, deg) {
   document.querySelector('.wind-speed').textContent = `${Math.round(speed*3.6)} km/h`

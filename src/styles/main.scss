@@ -30,6 +30,8 @@ body {
   max-width: 700px;
 }
 
+// ================= START OF BLOCK ICON ========================
+
 header{
   display: flex;
   flex-direction: column;
@@ -84,6 +86,8 @@ h2{
   font-family: 'Chivo Mono', monospace;
 }
 
+// ================= START OF ICON BLOCK ========================
+
 .weather-traits-wrapper{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -110,10 +114,24 @@ h2{
   width: 80px;
 }
 
+// ================= START OF TEMP BLOCK ========================
+.temperature-icon{
+  
+}
 .current-temp{
-  transform: translateX(-20px);
+  transform: translate(-20px, 5px);
   font-size: 30px;
 }
+
+.other-temp-unit{
+  transform: translate(25px, 35px);
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  
+}
+
+// ================= START OF WIND BLOCK ========================
 
 .wind{
   display: flex;
@@ -182,6 +200,8 @@ h2{
   width: 1rem;
   color: $primary-color;
 }
+
+// ================= START OF HUMIDITY BLOCK ========================
 
 .humidity{
   transform: translateY(15px);
