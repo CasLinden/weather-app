@@ -1,62 +1,77 @@
 import { getCurrentWeather, setNewLoc } from "./apifunctions";
 import { displayTime } from "./clock";
+import tempIcon from "./assets/temperature-icon.svg"
+import arrowIcon from "./assets/compass-arrow.svg"
+import windIcon from "./assets/wind-speed.svg"
+import humidityIcon from "./assets/humidity-icon.svg"
 
 
 function typeInLoc() {
-  let btn = document.querySelector(".submit-location")
-  btn.addEventListener("click", () => {
-    let inputField = document.getElementById("location-input").value;
-    document.getElementById("location-input").value = "";
-    setNewLoc(inputField)
-  });
   document.getElementById('location-input').addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      btn.click();
+      let inputField = document.getElementById("location-input").value;
+      document.getElementById("location-input").value = "";
+      setNewLoc(inputField);
     }
   });
 }
 typeInLoc()
 
+let Kelvin
+
 async function displayCurrentWeather() {
   let data = await getCurrentWeather()
   console.log(data)
-  displayName(data)
+  displayWeatherDescription(data.weather[0].description);
+  displayName(data.name, data.sys.country)
   displayTime(data.timezone)
-  mainIcon(data);
-  displayTemp(data)
-  displayWind(data)
+  displayMainIcon(data.weather[0].icon);
+  displayTemp(data.main.temp)
+  displayWind(data.wind.speed, data.wind.deg)
+  displayHumidity(data.main.humidity)
 }
 
-function displayName(data) {
-  document.getElementById("location").textContent = `${data.name}, ${data.sys.country}`;
+function displayWeatherDescription(desc) {
+  document.getElementById('description').textContent = desc.split(' ').map(part => part[0].toUpperCase() + part.slice(1)).join(' ')
 }
 
-function mainIcon(data) {
-  document.getElementById('main-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+function displayName(name, country) {
+  document.getElementById("location").textContent = `${name.toUpperCase()} ${country}`;
+}
+
+function displayMainIcon(icon) {
+  document.getElementById('main-icon').src = `http://openweathermap.org/img/wn/${icon}@2x.png`
 }
 
 let tempUnit = "Celsius";
+
 
 function toggleTempUnit() {
   tempUnit === "Celsius" ? (tempUnit = "Fahrenheit") : (tempUnit = "Celsius");
 }
 
-function convertTemp(kelvinTemp) {
+function displayTemp(KelvinTemp) { 
+  Kelvin = KelvinTemp
   if (tempUnit === "Celsius") {
-    return kelvinTemp - 273.15;
-  } else if (tempUnit === "Fahrenheit") {
-    return ((kelvinTemp - 273.15) * 9) / 5 + 32;
+     var localtemp = `${Math.round(KelvinTemp - 273.15)}°C`;
+   } else if (tempUnit === "Fahrenheit") {
+     var localtemp = `${Math.round(((KelvinTemp - 273.15) * 9) / 5 + 32)}°F`;
   }
+  document.querySelector('.temperature-icon').src = tempIcon
+  document.querySelector('.current-temp').textContent = localtemp
 }
 
-function displayTemp(data) {
-  let temp = Math.round(convertTemp(data.main.temp))
-  document.querySelector('.current-temp').textContent = temp
+function displayWind(speed, deg) {
+  document.querySelector('.wind-speed').textContent = `${Math.round(speed*3.6)} km/h`
+  document.querySelector('.wind-icon').src = windIcon
+  const arrow = document.getElementById("compass-arrow")
+  arrow.src = arrowIcon;
+  arrow.style.transform ="rotate(" + deg + "deg)";
 }
 
-function displayWind(data) {
-  document.querySelector('.wind-speed').textContent = data.wind.speed
-  
+function displayHumidity(hum) {
+  document.querySelector('.humidity').textContent = hum
+  document.querySelector('.humidity-icon').src = humidityIcon
 }
 
 export {

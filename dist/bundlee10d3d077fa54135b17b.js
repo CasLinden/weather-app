@@ -16,18 +16,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/search-icon.svg */ "./src/assets/search-icon.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: #2fa8cc;\n  font-family: \"Roboto\", sans-serif;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n}\n\nh1 {\n  font-size: 30px;\n}\n\nh2 {\n  padding: 0;\n  margin: 0;\n}\n\n.location-form {\n  display: flex;\n  align-items: center;\n}\n\n.submit-location {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  padding: 10px;\n  border: none;\n  margin-left: 2px;\n  mix-blend-mode: color-burn;\n  border-radius: 20%;\n}\n\n.submit-location:active {\n  mix-blend-mode: normal;\n}\n\n.current.weather {\n  background-color: black;\n}\n\n.coming-days {\n  background-color: whitesmoke;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAMA;EACE,sBAAA;AAJF;;AAOA;EACI,yBATY;EAUZ,iCAAA;AAJJ;;AAOA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,mBAAA;AAJF;;AAQA;EACE,eAAA;AALF;;AAQA;EACE,UAAA;EACA,SAAA;AALF;;AASA;EACE,aAAA;EACA,mBAAA;AANF;;AASA;EACE,yDAAA;EACA,4BAAA;EACA,2BAAA;EACA,aAAA;EACA,YAAA;EACA,gBAAA;EACA,0BAAA;EACA,kBAAA;AANF;;AASA;EACE,sBAAA;AANF;;AASA;EACE,uBAAA;AANF;;AASA;EACE,4BAAA;AANF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n\n$primary-color: #2fa8cc;\n$secondary-color: #f4f4f4;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n    background-color: $primary-color;\n    font-family: 'Roboto', sans-serif;\n}\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n}\n\n\nh1 {\n  font-size: 30px;\n}\n\nh2{\n  padding: 0;\n  margin: 0;\n\n}\n\n.location-form{\n  display: flex;\n  align-items: center;\n}\n\n.submit-location{\n  background-image: url('/src/assets/search-icon.svg');\n  background-repeat: no-repeat;\n  background-position: center;\n  padding: 10px;\n  border: none;\n  margin-left: 2px;\n  mix-blend-mode: color-burn;\n  border-radius: 20%;\n}\n\n.submit-location:active{\n  mix-blend-mode: normal;\n}\n\n.current.weather{\n  background-color: black;\n}\n\n.coming-days{\n  background-color: whitesmoke;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n  background-color: #41463D;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.page-wrapper {\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: #1CFEBA;\n}\n\n.search-container {\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input {\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus {\n  outline: white;\n  border: white;\n}\n\nmain {\n  display: grid;\n  gap: 12px;\n  padding: 12px;\n}\n\n.heading-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper {\n  display: flex;\n  justify-content: space-between;\n}\n\nh2 {\n  font-size: 17px;\n  color: #95F2D9;\n}\n\n#clock {\n  font-family: \"Chivo Mono\", monospace;\n}\n\n.weather-traits-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n}\n\n.weather-trait-container {\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon {\n  height: 100px;\n  width: 100px;\n}\n\n.icon {\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp {\n  transform: translateX(-20px);\n  font-size: 30px;\n}\n\n.wind {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid {\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\" \"W I E\" \". S .\";\n}\n\n.N {\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid > div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.compass-container {\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow {\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container {\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon {\n  height: 1rem;\n  width: 1rem;\n  color: #B8CDF8;\n}\n\n.humidity {\n  transform: translateY(15px);\n  font-size: 20px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,iBAAA;AAPF;;AAUA;EACI,yBAbU;EAcV,iCAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAPJ;;AAUA;EACE,YAAA;EACA,gBAAA;AAPF;;AAUA;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,SAAA;EACA,yBAhCY;AAyBd;;AASA;EACE,aAAA;EACA,oCAAA;EACA,mBAAA;EACA,kBAAA;AANF;;AASA;EACE,YAAA;EACA,6BAAA;EACA,iBAAA;EACA,eAAA;AANF;;AASA;EACE,cAAA;EACA,aAAA;AANF;;AAWA;EACC,aAAA;EACA,SAAA;EACA,aAAA;AARD;;AAWA;EACE,aAAA;EACA,sBAAA;AARF;;AAWA;EACE,aAAA;EACA,8BAAA;AARF;;AAWA;EACE,eAAA;EACA,cAAA;AARF;;AAUA;EACE,oCAAA;AAPF;;AAUA;EACE,aAAA;EACA,2DAAA;EACA,QAAA;AAPF;;AAWA;EACE,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AARF;;AAWA;EACE,aAAA;EACA,YAAA;AARF;;AAWA;EACE,YAAA;EACA,WAAA;AARF;;AAWA;EACE,4BAAA;EACA,eAAA;AARF;;AAWA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,SAAA;AARF;;AAWA;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,oCAAA;EACA,iCAAA;EACA,4CAAA;AARF;;AAaA;EACE,YAAA;AAVF;;AAaA;EACE,YAAA;AAVF;;AAaA;EACE,YAAA;AAVF;;AAaA;EACE,YAAA;AAVF;;AAaA;EACE,YAAA;AAVF;;AAaA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAVF;;AAYA;EACE,4BAAA;EACA,kBAAA;EACA,WAAA;AATF;;AAYA;EACE,UAAA;EACA,kBAAA;AATF;;AAYA;EACE,aAAA;EACA,QAAA;EACA,yBAAA;EACA,eAAA;AATF;;AAYA;EACE,YAAA;EACA,WAAA;EACA,cAnLc;AA0KhB;;AAYA;EACE,2BAAA;EACA,eAAA;AATF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');\n\n$primary-color: #B8CDF8;\n$secondary-color: #9D8DF1;\n$third-color: #41463D;\n$fourth-color:#95F2D9;\n$fifth-color: #1CFEBA;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n    background-color: $third-color;\n    font-family: 'Roboto', sans-serif;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.page-wrapper{\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: $fifth-color;\n}\n.search-container{\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input{\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus{\n  outline: white;\n  border: white;\n}\n\n// ================= START OF MAIN ========================\n\nmain {\n display: grid;\n gap: 12px;\n padding: 12px;\n}\n\n.heading-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper{\n  display: flex;\n  justify-content: space-between;\n}\n\nh2{\n  font-size: 17px;\n  color: #95F2D9;\n}\n#clock{\n  font-family: 'Chivo Mono', monospace;\n}\n\n.weather-traits-wrapper{\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n\n}\n\n.weather-trait-container{\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon{\n  height: 100px;\n  width: 100px;\n}\n\n.icon{\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp{\n  transform: translateX(-20px);\n  font-size: 30px;\n}\n\n.wind{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid{\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\"\n                       \"W I E\"\n                       \". S .\";\n}\n\n.N{\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid>div{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.compass-container{\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow{\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container{\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon{\n  height: 1rem;\n  width: 1rem;\n  color: $primary-color;\n}\n\n.humidity{\n  transform: translateY(15px);\n  font-size: 20px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -124,41 +120,6 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-  if (!url) {
-    return url;
-  }
-  url = String(url.__esModule ? url.default : url);
-
-  // If url is already wrapped in quotes, remove them
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-  if (options.hash) {
-    url += options.hash;
-  }
-
-  // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-  return url;
 };
 
 /***/ }),
@@ -563,65 +524,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _apifunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apifunctions */ "./src/apifunctions.js");
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock */ "./src/clock.js");
+/* harmony import */ var _assets_temperature_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/temperature-icon.svg */ "./src/assets/temperature-icon.svg");
+/* harmony import */ var _assets_compass_arrow_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/compass-arrow.svg */ "./src/assets/compass-arrow.svg");
+/* harmony import */ var _assets_wind_speed_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/wind-speed.svg */ "./src/assets/wind-speed.svg");
+/* harmony import */ var _assets_humidity_icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/humidity-icon.svg */ "./src/assets/humidity-icon.svg");
+
+
+
+
 
 
 
 
 function typeInLoc() {
-  let btn = document.querySelector(".submit-location")
-  btn.addEventListener("click", () => {
-    let inputField = document.getElementById("location-input").value;
-    document.getElementById("location-input").value = "";
-    (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.setNewLoc)(inputField)
-  });
   document.getElementById('location-input').addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      btn.click();
+      let inputField = document.getElementById("location-input").value;
+      document.getElementById("location-input").value = "";
+      (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.setNewLoc)(inputField);
     }
   });
 }
 typeInLoc()
 
+let Kelvin
+
 async function displayCurrentWeather() {
   let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)()
   console.log(data)
-  displayName(data)
+  displayWeatherDescription(data.weather[0].description);
+  displayName(data.name, data.sys.country)
   ;(0,_clock__WEBPACK_IMPORTED_MODULE_1__.displayTime)(data.timezone)
-  mainIcon(data);
-  displayTemp(data)
-  displayWind(data)
+  displayMainIcon(data.weather[0].icon);
+  displayTemp(data.main.temp)
+  displayWind(data.wind.speed, data.wind.deg)
+  displayHumidity(data.main.humidity)
 }
 
-function displayName(data) {
-  document.getElementById("location").textContent = `${data.name}, ${data.sys.country}`;
+function displayWeatherDescription(desc) {
+  document.getElementById('description').textContent = desc.split(' ').map(part => part[0].toUpperCase() + part.slice(1)).join(' ')
 }
 
-function mainIcon(data) {
-  document.getElementById('main-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+function displayName(name, country) {
+  document.getElementById("location").textContent = `${name.toUpperCase()} ${country}`;
+}
+
+function displayMainIcon(icon) {
+  document.getElementById('main-icon').src = `http://openweathermap.org/img/wn/${icon}@2x.png`
 }
 
 let tempUnit = "Celsius";
+
 
 function toggleTempUnit() {
   tempUnit === "Celsius" ? (tempUnit = "Fahrenheit") : (tempUnit = "Celsius");
 }
 
-function convertTemp(kelvinTemp) {
+function displayTemp(KelvinTemp) { 
+  Kelvin = KelvinTemp
   if (tempUnit === "Celsius") {
-    return kelvinTemp - 273.15;
-  } else if (tempUnit === "Fahrenheit") {
-    return ((kelvinTemp - 273.15) * 9) / 5 + 32;
+     var localtemp = `${Math.round(KelvinTemp - 273.15)}°C`;
+   } else if (tempUnit === "Fahrenheit") {
+     var localtemp = `${Math.round(((KelvinTemp - 273.15) * 9) / 5 + 32)}°F`;
   }
+  document.querySelector('.temperature-icon').src = _assets_temperature_icon_svg__WEBPACK_IMPORTED_MODULE_2__
+  document.querySelector('.current-temp').textContent = localtemp
 }
 
-function displayTemp(data) {
-  let temp = Math.round(convertTemp(data.main.temp))
-  document.querySelector('.current-temp').textContent = temp
+function displayWind(speed, deg) {
+  document.querySelector('.wind-speed').textContent = `${Math.round(speed*3.6)} km/h`
+  document.querySelector('.wind-icon').src = _assets_wind_speed_svg__WEBPACK_IMPORTED_MODULE_4__
+  const arrow = document.getElementById("compass-arrow")
+  arrow.src = _assets_compass_arrow_svg__WEBPACK_IMPORTED_MODULE_3__;
+  arrow.style.transform ="rotate(" + deg + "deg)";
 }
 
-function displayWind(data) {
-  document.querySelector('.wind-speed').textContent = data.wind.speed
-  
+function displayHumidity(hum) {
+  document.querySelector('.humidity').textContent = hum
+  document.querySelector('.humidity-icon').src = _assets_humidity_icon_svg__WEBPACK_IMPORTED_MODULE_5__
 }
 
 
@@ -718,13 +698,43 @@ function startClock(timeZone) {
 
 /***/ }),
 
-/***/ "./src/assets/search-icon.svg":
-/*!************************************!*\
-  !*** ./src/assets/search-icon.svg ***!
-  \************************************/
+/***/ "./src/assets/compass-arrow.svg":
+/*!**************************************!*\
+  !*** ./src/assets/compass-arrow.svg ***!
+  \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "search-icon.svg";
+module.exports = __webpack_require__.p + "compass-arrow.svg";
+
+/***/ }),
+
+/***/ "./src/assets/humidity-icon.svg":
+/*!**************************************!*\
+  !*** ./src/assets/humidity-icon.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "humidity-icon.svg";
+
+/***/ }),
+
+/***/ "./src/assets/temperature-icon.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/temperature-icon.svg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "temperature-icon.svg";
+
+/***/ }),
+
+/***/ "./src/assets/wind-speed.svg":
+/*!***********************************!*\
+  !*** ./src/assets/wind-speed.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "wind-speed.svg";
 
 /***/ })
 
@@ -753,9 +763,6 @@ module.exports = __webpack_require__.p + "search-icon.svg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -830,32 +837,6 @@ module.exports = __webpack_require__.p + "search-icon.svg";
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"bundle": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -884,4 +865,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle9d7276aa10adf4fb4fc5.js.map
+//# sourceMappingURL=bundlee10d3d077fa54135b17b.js.map
