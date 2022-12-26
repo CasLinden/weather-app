@@ -92,7 +92,7 @@ h2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 4px;
-
+  margin-bottom: 8px;
 }
 
 .weather-trait-container{
@@ -204,4 +204,29 @@ h2{
 .humidity{
   transform: translateY(15px);
   font-size: 20px;
+}
+
+.hum-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+// ================= START OF FORECAST ========================
+
+h3{
+  font-size: 18px;
+}
+.forecast-container{
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.forecast-entry-container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+h4 {
+  color: #95F2D9;
 }

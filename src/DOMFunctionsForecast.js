@@ -1,23 +1,34 @@
 import { getFiveDayForecast } from "./apifunctions";
+import { convertTemp } from "./temperatures";
 
 async function displayForecast() {
   let data = await getFiveDayForecast();
-  console.log(data)
-  let days = fourDays(trimToday(data.list))
+  let fourDayData = fourDays(trimToday(data.list))
+  createElements(fourDayData)
 }
 
 // We need to trim off data that is for today, meaning we only get forecast data for 4 full coming days
 
-function findTomorrow(list) {
-  let today = list[0].dt_txt.split("-")[2].substring(0, 2);
-  let tomorrow = list.find((day) => day.dt_txt.split("-")[2].substring(0, 2) != today);
+function getDate(entry) {
+  return entry.dt_txt.split(" ")[0]
+}
+
+function getMonth(entry) {
+  return getDate(entry).split("-")[1]
+}
+
+function getDayOfMonth(entry) {
+  return getDate(entry).split("-")[2].substring(0, 2);
+}
+
+function findTomorrowIndex(list) {
+  const today = getDayOfMonth(list[0])
+  const tomorrow = list.find((day) => getDayOfMonth(day) != today);
   return list.indexOf(tomorrow)
 }
 
 function trimToday(list) {
-  let newStartIndex = findTomorrow(list)
-  let newList = list.slice(newStartIndex)
-  return newList
+  return list.slice(findTomorrowIndex(list))
 }
 
 function fourDays (newList) {
@@ -25,23 +36,99 @@ function fourDays (newList) {
   for (let i = 0; i < 32; i += 8) {
     fourDayArray.push(newList.slice(i, i + 8));
   }
-  console.log(fourDayArray)
   return fourDayArray
 }
 
-function getAvgTemps(fourDayArray) {
-  let fourTemps = [];
-  fourDayArray.forEach((arrayOfEight) => {
-    fiveTemps.push(
-      arrayOfEight
-        .map((e) => e.main.temp)
-        .reduce((acc, curr) => acc + curr, 0) / 8
-    );
-  });
-  return fourTemps
+// BELOW: dom elements 
+
+function createElements(fourDayData) {
+  const container = document.querySelector('.forecast-container')
+  clearContainer()
+  fourDayData.forEach(day => {
+    let entryContainer = makeEntryContainer()
+    entryContainer.appendChild(makeEntryDate(day))
+    entryContainer.appendChild(makeEntryIcon(getIconUrl(getDayTimeIcon(day))));
+    entryContainer.appendChild(makeEntryTemp(day))
+    container.appendChild(entryContainer)
+  }); 
 }
 
+function clearContainer() {
+    const container = document.querySelector(".forecast-container");
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+}
 
+function makeEntryContainer() {
+  let container = document.createElement("div");
+  container.classList.add("forecast-entry-container");
+  return container;
+}
 
+function makeEntryIcon(url) {
+  let icon = document.createElement('img')
+  icon.classList.add('forecast-entry-icon', 'icon')
+  icon.src = url
+  return icon
+}
+
+function getDayTimeIcon(day) {
+  let dayTimeIcons = day
+    .map(entry => entry.weather[0].icon)
+    .filter(icon => icon.substring(2) === 'd')
+
+  //for the simple forecast we want to display the most common of the day time icons
+    const iconCounts = dayTimeIcons.reduce((counts, icon) => {
+      counts[icon] = (counts[icon] || 0) + 1;
+      return counts;
+    }, {});
+
+    let commonIcon;
+    let highestCount = 0;
+//the highest count is stored in commonIcon
+    Object.keys(iconCounts).forEach((str) => {
+      if (iconCounts[str] > highestCount) {
+        highestCount = iconCounts[str];
+        commonIcon = str;
+      }
+    });
+    return commonIcon;
+}
+
+function getIconUrl(icon) {
+  return `http://openweathermap.org/img/wn/${icon}@2x.png`;
+}
+
+function makeEntryTemp(day) {
+  let temp = document.createElement('div')
+  temp.classList.add('forecast-entry-temp')
+  temp.textContent = convertTemp(getAvgTemp(day))
+  return temp
+}
+
+function getAvgTemp(day) {
+  return (
+    day
+      .map((entry) => entry.main.temp)
+      .reduce((total, currentVal) => total + currentVal, 0) / 8
+  );
+}
+
+function makeEntryDate(day) {
+  let dateContainer = document.createElement('h4')
+  dateContainer.classList.add('forecast-entry-date')
+  dateContainer.textContent = `${getDayOfMonth(day[0])} / ${getMonth(day[0])}`
+  return dateContainer
+}
+
+function addDivisions() {
+  const icons = document.getElementsByClassName('forecast-entry-icon')
+  const iconsArray = Array.from(icons)
+  console.log(iconsArray)
+}
+
+addDivisions()
 
 export { displayForecast };
+

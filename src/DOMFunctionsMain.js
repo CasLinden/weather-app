@@ -4,6 +4,7 @@ import tempIcon from "./assets/temperature-icon.svg";
 import arrowIcon from "./assets/compass-arrow.svg";
 import windIcon from "./assets/wind-speed.svg";
 import humidityIcon from "./assets/humidity-icon.svg";
+import {convertTemp, toggleTempUnit, tempUnit} from "./temperatures"
 
 function typeInLoc() {
   const input = document.getElementById("location-input")
@@ -52,28 +53,10 @@ function displayMainIcon(icon) {
   ).src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 }
 
-let tempUnit = "Celsius";
-
-function toggleTempUnit() {
-  tempUnit === "Celsius" ? (tempUnit = "Fahrenheit") : (tempUnit = "Celsius");
+function displayTemp(temp) {
+ document.querySelector(".temperature-icon").src = tempIcon;
+ document.querySelector(".current-temp").textContent = convertTemp(temp)
 }
-
-function displayTemp(KelvinTemp) {
-  Kelvin = KelvinTemp;
-  if (tempUnit === "Celsius") {
-    var localtemp = `${Math.round(KelvinTemp - 273.15)}°C`;
-  } else if (tempUnit === "Fahrenheit") {
-    var localtemp = `${Math.round(((KelvinTemp - 273.15) * 9) / 5 + 32)}°F`;
-  }
-  document.querySelector(".temperature-icon").src = tempIcon;
-  document.querySelector(".current-temp").textContent = localtemp;
-}
-
-document.querySelector(".other-temp-unit").addEventListener("click", () => {
-  toggleTempUnit();
-  displayTemp(Kelvin);
-  document.querySelector(".other-temp-unit");
-});
 
 function displayWind(speed, deg) {
   document.querySelector(".wind-speed").textContent = `${Math.round(
