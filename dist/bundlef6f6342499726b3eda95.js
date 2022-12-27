@@ -23,7 +23,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n  background-color: #41463D;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.page-wrapper {\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: #1CFEBA;\n}\n\n.search-container {\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input {\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus {\n  outline: white;\n  border: white;\n}\n\nmain {\n  display: grid;\n  gap: 12px;\n  padding: 12px;\n}\n\n.heading-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper {\n  display: flex;\n  justify-content: space-between;\n}\n\nh2 {\n  font-size: 17px;\n  color: #95F2D9;\n}\n\n#clock {\n  font-family: \"Chivo Mono\", monospace;\n}\n\n.weather-traits-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n  margin-bottom: 8px;\n}\n\n.weather-trait-container {\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon {\n  height: 100px;\n  width: 100px;\n}\n\n.icon {\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp {\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit {\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n}\n\n.wind {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid {\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\" \"W I E\" \". S .\";\n}\n\n.N {\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid > div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.compass-container {\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow {\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container {\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon {\n  height: 1rem;\n  width: 1rem;\n  color: #B8CDF8;\n}\n\n.humidity {\n  transform: translateY(15px);\n  font-size: 20px;\n}\n\n.hum-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\nh3 {\n  font-size: 18px;\n}\n\n.forecast-container {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n}\n\n.forecast-entry-container {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n\nh4 {\n  color: #95F2D9;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,iBAAA;AAPF;;AAUA;EACI,yBAbU;EAcV,iCAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAPJ;;AAUA;EACE,YAAA;EACA,gBAAA;AAPF;;AAYA;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,SAAA;EACA,yBAlCY;AAyBd;;AAWA;EACE,aAAA;EACA,oCAAA;EACA,mBAAA;EACA,kBAAA;AARF;;AAWA;EACE,YAAA;EACA,6BAAA;EACA,iBAAA;EACA,eAAA;AARF;;AAWA;EACE,cAAA;EACA,aAAA;AARF;;AAaA;EACC,aAAA;EACA,SAAA;EACA,aAAA;AAVD;;AAaA;EACE,aAAA;EACA,sBAAA;AAVF;;AAaA;EACE,aAAA;EACA,8BAAA;AAVF;;AAaA;EACE,eAAA;EACA,cAAA;AAVF;;AAYA;EACE,oCAAA;AATF;;AAcA;EACE,aAAA;EACA,2DAAA;EACA,QAAA;EACA,kBAAA;AAXF;;AAcA;EACE,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,aAAA;EACA,YAAA;AAXF;;AAcA;EACE,YAAA;EACA,WAAA;AAXF;;AAgBA;EACE,gCAAA;EACA,eAAA;AAbF;;AAgBA;EACE,gCAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAbF;;AAmBA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,SAAA;AAhBF;;AAmBA;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,oCAAA;EACA,iCAAA;EACA,4CAAA;AAhBF;;AAqBA;EACE,YAAA;AAlBF;;AAqBA;EACE,YAAA;AAlBF;;AAqBA;EACE,YAAA;AAlBF;;AAqBA;EACE,YAAA;AAlBF;;AAqBA;EACE,YAAA;AAlBF;;AAqBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAlBF;;AAoBA;EACE,4BAAA;EACA,kBAAA;EACA,WAAA;AAjBF;;AAoBA;EACE,UAAA;EACA,kBAAA;AAjBF;;AAoBA;EACE,aAAA;EACA,QAAA;EACA,yBAAA;EACA,eAAA;AAjBF;;AAoBA;EACE,YAAA;EACA,WAAA;EACA,cAnMc;AAkLhB;;AAsBA;EACE,2BAAA;EACA,eAAA;AAnBF;;AAsBA;EACE,aAAA;EACA,sBAAA;AAnBF;;AAwBA;EACE,eAAA;AArBF;;AAuBA;EACE,aAAA;EACE,qCAAA;AApBJ;;AAuBA;EACE,aAAA;EACA,mBAAA;EACA,qBAAA;AApBF;;AAuBA;EACE,cAAA;AApBF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');\n\n$primary-color: #B8CDF8;\n$secondary-color: #9D8DF1;\n$third-color: #41463D;\n$fourth-color:#95F2D9;\n$fifth-color: #1CFEBA;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n    background-color: $third-color;\n    font-family: 'Roboto', sans-serif;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.page-wrapper{\n  width: 100vw;\n  max-width: 700px;\n}\n\n// ================= START OF BLOCK ICON ========================\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: $fifth-color;\n}\n.search-container{\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input{\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus{\n  outline: white;\n  border: white;\n}\n\n// ================= START OF MAIN ========================\n\nmain {\n display: grid;\n gap: 12px;\n padding: 12px;\n}\n\n.heading-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper{\n  display: flex;\n  justify-content: space-between;\n}\n\nh2{\n  font-size: 17px;\n  color: #95F2D9;\n}\n#clock{\n  font-family: 'Chivo Mono', monospace;\n}\n\n// ================= START OF ICON BLOCK ========================\n\n.weather-traits-wrapper{\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n  margin-bottom: 8px;\n}\n\n.weather-trait-container{\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon{\n  height: 100px;\n  width: 100px;\n}\n\n.icon{\n  height: 80px;\n  width: 80px;\n}\n\n// ================= START OF TEMP BLOCK ========================\n\n.current-temp{\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit{\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n  \n}\n\n// ================= START OF WIND BLOCK ========================\n\n.wind{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid{\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\"\n                       \"W I E\"\n                       \". S .\";\n}\n\n.N{\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid>div{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.compass-container{\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow{\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container{\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon{\n  height: 1rem;\n  width: 1rem;\n  color: $primary-color;\n}\n\n// ================= START OF HUMIDITY BLOCK ========================\n\n.humidity{\n  transform: translateY(15px);\n  font-size: 20px;\n}\n\n.hum-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n// ================= START OF FORECAST ========================\n\nh3{\n  font-size: 18px;\n}\n.forecast-container{\n  display: grid;\n    grid-template-columns: repeat(4, 1fr);\n}\n\n.forecast-entry-container{\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n\nh4 {\n  color: #95F2D9;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n  background-color: #41463D;\n  font-family: \"Roboto\", sans-serif;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.page-wrapper {\n  width: 100vw;\n  max-width: 700px;\n}\n\nheader {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: #1CFEBA;\n}\n\n.search-container {\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input {\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus {\n  outline: white;\n  border: white;\n}\n\nmain {\n  display: grid;\n  gap: 12px;\n  padding: 12px;\n}\n\n.heading-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper {\n  display: flex;\n  justify-content: space-between;\n}\n\nh2 {\n  font-size: 17px;\n  color: #95F2D9;\n}\n\n#clock {\n  font-family: \"Chivo Mono\", monospace;\n}\n\n.weather-traits-wrapper {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n  margin-bottom: 8px;\n}\n\n.weather-trait-container {\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon {\n  height: 100px;\n  width: 100px;\n}\n\n.icon {\n  height: 80px;\n  width: 80px;\n}\n\n.current-temp {\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit {\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n}\n\n#current-temp-container {\n  display: grid;\n  grid-template-columns: 1fr 1.5fr;\n  padding-left: 24px;\n}\n\n.wind {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid {\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\" \"W I E\" \". S .\";\n}\n\n.N {\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid > div {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.compass-container {\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow {\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container {\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon {\n  height: 1rem;\n  width: 1rem;\n  color: #B8CDF8;\n}\n\n.humidity {\n  transform: translateY(15px);\n  font-size: 20px;\n}\n\n.hum-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n\nh3 {\n  font-size: 18px;\n}\n\n.forecast-container {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n}\n\n.forecast-entry-container {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n\nh4 {\n  color: #95F2D9;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAUA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,iBAAA;AAPF;;AAUA;EACI,yBAbU;EAcV,iCAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAPJ;;AAUA;EACE,YAAA;EACA,gBAAA;AAPF;;AAYA;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,SAAA;EACA,yBAlCY;AAyBd;;AAWA;EACE,aAAA;EACA,oCAAA;EACA,mBAAA;EACA,kBAAA;AARF;;AAWA;EACE,YAAA;EACA,6BAAA;EACA,iBAAA;EACA,eAAA;AARF;;AAWA;EACE,cAAA;EACA,aAAA;AARF;;AAaA;EACC,aAAA;EACA,SAAA;EACA,aAAA;AAVD;;AAaA;EACE,aAAA;EACA,sBAAA;AAVF;;AAaA;EACE,aAAA;EACA,8BAAA;AAVF;;AAaA;EACE,eAAA;EACA,cAAA;AAVF;;AAYA;EACE,oCAAA;AATF;;AAcA;EACE,aAAA;EACA,2DAAA;EACA,QAAA;EACA,kBAAA;AAXF;;AAcA;EACE,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAXF;;AAcA;EACE,aAAA;EACA,YAAA;AAXF;;AAcA;EACE,YAAA;EACA,WAAA;AAXF;;AAgBA;EACE,gCAAA;EACA,eAAA;AAbF;;AAgBA;EACE,gCAAA;EACA,6BAAA;EACA,YAAA;EACA,kBAAA;AAbF;;AAgBA;EACE,aAAA;EACA,gCAAA;EACA,kBAAA;AAbF;;AAkBA;EACE,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,YAAA;EACA,SAAA;AAfF;;AAkBA;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,oCAAA;EACA,iCAAA;EACA,4CAAA;AAfF;;AAoBA;EACE,YAAA;AAjBF;;AAoBA;EACE,YAAA;AAjBF;;AAoBA;EACE,YAAA;AAjBF;;AAoBA;EACE,YAAA;AAjBF;;AAoBA;EACE,YAAA;AAjBF;;AAoBA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAjBF;;AAmBA;EACE,4BAAA;EACA,kBAAA;EACA,WAAA;AAhBF;;AAmBA;EACE,UAAA;EACA,kBAAA;AAhBF;;AAmBA;EACE,aAAA;EACA,QAAA;EACA,yBAAA;EACA,eAAA;AAhBF;;AAmBA;EACE,YAAA;EACA,WAAA;EACA,cAxMc;AAwLhB;;AAqBA;EACE,2BAAA;EACA,eAAA;AAlBF;;AAqBA;EACE,aAAA;EACA,sBAAA;AAlBF;;AAuBA;EACE,eAAA;AApBF;;AAsBA;EACE,aAAA;EACE,qCAAA;AAnBJ;;AAsBA;EACE,aAAA;EACA,mBAAA;EACA,qBAAA;AAnBF;;AAsBA;EACE,cAAA;AAnBF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');\n\n$primary-color: #B8CDF8;\n$secondary-color: #9D8DF1;\n$third-color: #41463D;\n$fourth-color:#95F2D9;\n$fifth-color: #1CFEBA;\n$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);\n\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  color: whitesmoke;\n}\n\nbody {\n    background-color: $third-color;\n    font-family: 'Roboto', sans-serif;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.page-wrapper{\n  width: 100vw;\n  max-width: 700px;\n}\n\n// ================= START OF BLOCK ICON ========================\n\nheader{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  padding: 24px;\n  margin: 0;\n  background-color: $fifth-color;\n}\n.search-container{\n  display: flex;\n  background-color: rgba(0, 0, 0, 0.2);\n  border-radius: 25px;\n  padding: 12px 24px;\n}\n\n#location-input{\n  border: none;\n  background-color: transparent;\n  margin-left: 12px;\n  font-size: 15px;\n}\n\n#location-input:focus{\n  outline: white;\n  border: white;\n}\n\n// ================= START OF MAIN ========================\n\nmain {\n display: grid;\n gap: 12px;\n padding: 12px;\n}\n\n.heading-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n.location-wrapper{\n  display: flex;\n  justify-content: space-between;\n}\n\nh2{\n  font-size: 17px;\n  color: #95F2D9;\n}\n#clock{\n  font-family: 'Chivo Mono', monospace;\n}\n\n// ================= START OF ICON BLOCK ========================\n\n.weather-traits-wrapper{\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 4px;\n  margin-bottom: 8px;\n}\n\n.weather-trait-container{\n  border-radius: 25px;\n  background-color: rgba(255, 255, 255, 0.3);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 150px;\n}\n\n#main-icon{\n  height: 100px;\n  width: 100px;\n}\n\n.icon{\n  height: 80px;\n  width: 80px;\n}\n\n// ================= START OF TEMP BLOCK ========================\n\n.current-temp{\n  transform: translate(-20px, 5px);\n  font-size: 30px;\n}\n\n.other-temp-unit{\n  transform: translate(25px, 35px);\n  background-color: transparent;\n  padding: 4px;\n  border-radius: 5px;\n}\n\n#current-temp-container{\n  display: grid;\n  grid-template-columns: 1fr 1.5fr;\n  padding-left: 24px;\n}\n\n// ================= START OF WIND BLOCK ========================\n\n.wind{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 4px;\n  gap: 10px;\n}\n\n.directions-grid{\n  aspect-ratio: 1/1;\n  width: 90px;\n  display: grid;\n  grid-template-columns: 1rem 1fr 1rem;\n  grid-template-rows: 1rem 1fr 1rem;\n  grid-template-areas: \". N .\"\n                       \"W I E\"\n                       \". S .\";\n}\n\n.N{\n  grid-area: N;\n}\n\n.W {\n  grid-area: W;\n}\n\n.compass-container {\n  grid-area: I;\n}\n\n.E {\n  grid-area: E;\n}\n\n.S {\n  grid-area: S;\n}\n\n.directions-grid>div{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.compass-container{\n  border: 4px solid whitesmoke;\n  border-radius: 50%;\n  margin: 2px;\n}\n\n#compass-arrow{\n  width: 65%;\n  transition: all 1s;\n}\n\n.wind-speed-container{\n  display: flex;\n  gap: 4px;\n  justify-content: flex-end;\n  margin-top: 8px;\n}\n\n.wind-icon{\n  height: 1rem;\n  width: 1rem;\n  color: $primary-color;\n}\n\n// ================= START OF HUMIDITY BLOCK ========================\n\n.humidity{\n  transform: translateY(15px);\n  font-size: 20px;\n}\n\n.hum-wrapper{\n  display: flex;\n  flex-direction: column;\n}\n\n// ================= START OF FORECAST ========================\n\nh3{\n  font-size: 18px;\n}\n.forecast-container{\n  display: grid;\n    grid-template-columns: repeat(4, 1fr);\n}\n\n.forecast-entry-container{\n  display: grid;\n  align-items: center;\n  justify-items: center;\n}\n\nh4 {\n  color: #95F2D9;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -520,12 +520,16 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "displayForecast": () => (/* binding */ displayForecast)
+/* harmony export */   "displayForecast": () => (/* binding */ displayForecast),
+/* harmony export */   "foreCastKelvins": () => (/* binding */ foreCastKelvins)
 /* harmony export */ });
 /* harmony import */ var _apifunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apifunctions */ "./src/apifunctions.js");
 /* harmony import */ var _temperatures__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./temperatures */ "./src/temperatures.js");
 
 
+
+
+let foreCastKelvins = []
 
 async function displayForecast() {
   let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getFiveDayForecast)();
@@ -570,6 +574,7 @@ function fourDays (newList) {
 function createElements(fourDayData) {
   const container = document.querySelector('.forecast-container')
   clearContainer()
+  foreCastKelvins = []
   fourDayData.forEach(day => {
     let entryContainer = makeEntryContainer()
     entryContainer.appendChild(makeEntryDate(day))
@@ -577,6 +582,7 @@ function createElements(fourDayData) {
     entryContainer.appendChild(makeEntryTemp(day))
     container.appendChild(entryContainer)
   }); 
+  addDivisions()
 }
 
 function clearContainer() {
@@ -630,6 +636,7 @@ function makeEntryTemp(day) {
   let temp = document.createElement('div')
   temp.classList.add('forecast-entry-temp')
   temp.textContent = (0,_temperatures__WEBPACK_IMPORTED_MODULE_1__.convertTemp)(getAvgTemp(day))
+  foreCastKelvins.push(getAvgTemp(day))
   return temp
 }
 
@@ -644,17 +651,30 @@ function getAvgTemp(day) {
 function makeEntryDate(day) {
   let dateContainer = document.createElement('h4')
   dateContainer.classList.add('forecast-entry-date')
-  dateContainer.textContent = `${getDayOfMonth(day[0])} / ${getMonth(day[0])}`
+  dateContainer.textContent = `${
+    daysOfWeek[new Date(day[3].dt_txt).getDay()]
+  } ${getDayOfMonth(day[0])}`;
   return dateContainer
 }
 
-function addDivisions() {
-  const icons = document.getElementsByClassName('forecast-entry-icon')
-  const iconsArray = Array.from(icons)
-  console.log(iconsArray)
-}
+const daysOfWeek = [
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thur",
+  "Fri",
+  "Sat",
+];
 
-addDivisions()
+function addDivisions() {
+  const icons = document.getElementsByClassName('forecast-entry-container')
+  const iconsArray = Array.from(icons)
+  iconsArray.pop()
+  iconsArray.forEach(element => {
+    element.style.borderRight = "1px solid rgba(255, 255, 255, 0.3)"
+  })
+}
 
 
 
@@ -670,6 +690,7 @@ addDivisions()
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "currentKelvin": () => (/* binding */ currentKelvin),
 /* harmony export */   "displayCurrentWeather": () => (/* binding */ displayCurrentWeather)
 /* harmony export */ });
 /* harmony import */ var _apifunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apifunctions */ "./src/apifunctions.js");
@@ -687,6 +708,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+let currentKelvin
+
 function typeInLoc() {
   const input = document.getElementById("location-input")
     input.addEventListener("keydown", (e) => {
@@ -702,10 +725,9 @@ function typeInLoc() {
 }
 typeInLoc();
 
-let Kelvin;
-
 async function displayCurrentWeather() {
   let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)();
+  currentKelvin = data.main.temp
   displayWeatherDescription(data.weather[0].description);
   displayName(data.name, data.sys.country);
   (0,_clock__WEBPACK_IMPORTED_MODULE_1__.displayTime)(data.timezone);
@@ -874,16 +896,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "tempUnit": () => (/* binding */ tempUnit),
 /* harmony export */   "toggleTempUnit": () => (/* binding */ toggleTempUnit)
 /* harmony export */ });
-let tempUnit = "Celsius";
+/* harmony import */ var _DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOMFunctionsForecast */ "./src/DOMFunctionsForecast.js");
+/* harmony import */ var _DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DOMFunctionsMain */ "./src/DOMFunctionsMain.js");
 
-let Kelvin
+
+
+let tempUnit = "Celsius";
 
 function toggleTempUnit() {
   tempUnit === "Celsius" ? (tempUnit = "Fahrenheit") : (tempUnit = "Celsius");
+  toggleCurrentTemp()
+  toggleForecastTemps()
+  toggleButtonText()
+}
+
+function toggleCurrentTemp() {
+  let currentTemp = document.querySelector('.current-temp')
+  currentTemp.textContent = convertTemp(_DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_1__.currentKelvin)
+}
+
+function toggleForecastTemps() {
+  let forecastTemps = document.getElementsByClassName("forecast-entry-temp");
+  Array.from(forecastTemps).forEach((element, index) => { 
+    element.textContent = convertTemp(_DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_0__.foreCastKelvins[index])
+  });
+}
+
+function toggleButtonText() {
+  let btn = document.querySelector('.other-temp-unit')
+  if (btn.textContent === '°F') {
+    btn.textContent = '°C'
+  } else {
+    btn.textContent = '°F';
+  }
 }
 
 function convertTemp(KelvinTemp) {
-  Kelvin = KelvinTemp;
   if (tempUnit === "Celsius") {
     var localTemp = `${Math.round(KelvinTemp - 273.15)}°C`;
   } else if (tempUnit === "Fahrenheit") {
@@ -891,6 +939,8 @@ function convertTemp(KelvinTemp) {
   }
   return localTemp
 }
+
+document.querySelector('.other-temp-unit').addEventListener("click", toggleTempUnit)
 
 
 
@@ -1062,4 +1112,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle76c9bf1258cb1a4f300b.js.map
+//# sourceMappingURL=bundlef6f6342499726b3eda95.js.map

@@ -1,6 +1,9 @@
 import { getFiveDayForecast } from "./apifunctions";
 import { convertTemp } from "./temperatures";
 
+
+let foreCastKelvins = []
+
 async function displayForecast() {
   let data = await getFiveDayForecast();
   let fourDayData = fourDays(trimToday(data.list))
@@ -44,6 +47,7 @@ function fourDays (newList) {
 function createElements(fourDayData) {
   const container = document.querySelector('.forecast-container')
   clearContainer()
+  foreCastKelvins = []
   fourDayData.forEach(day => {
     let entryContainer = makeEntryContainer()
     entryContainer.appendChild(makeEntryDate(day))
@@ -51,6 +55,7 @@ function createElements(fourDayData) {
     entryContainer.appendChild(makeEntryTemp(day))
     container.appendChild(entryContainer)
   }); 
+  addDivisions()
 }
 
 function clearContainer() {
@@ -104,6 +109,7 @@ function makeEntryTemp(day) {
   let temp = document.createElement('div')
   temp.classList.add('forecast-entry-temp')
   temp.textContent = convertTemp(getAvgTemp(day))
+  foreCastKelvins.push(getAvgTemp(day))
   return temp
 }
 
@@ -118,17 +124,33 @@ function getAvgTemp(day) {
 function makeEntryDate(day) {
   let dateContainer = document.createElement('h4')
   dateContainer.classList.add('forecast-entry-date')
-  dateContainer.textContent = `${getDayOfMonth(day[0])} / ${getMonth(day[0])}`
+  dateContainer.textContent = `${
+    daysOfWeek[new Date(day[3].dt_txt).getDay()]
+  } ${getDayOfMonth(day[0])}`;
   return dateContainer
 }
 
+const daysOfWeek = [
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thur",
+  "Fri",
+  "Sat",
+];
+
 function addDivisions() {
-  const icons = document.getElementsByClassName('forecast-entry-icon')
+  const icons = document.getElementsByClassName('forecast-entry-container')
   const iconsArray = Array.from(icons)
-  console.log(iconsArray)
+  iconsArray.pop()
+  iconsArray.forEach(element => {
+    element.style.borderRight = "1px solid rgba(255, 255, 255, 0.3)"
+  })
 }
 
-addDivisions()
 
-export { displayForecast };
-
+export {
+  displayForecast,
+  foreCastKelvins
+};

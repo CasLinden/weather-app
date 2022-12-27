@@ -126,7 +126,12 @@ h2{
   background-color: transparent;
   padding: 4px;
   border-radius: 5px;
-  
+}
+
+#current-temp-container{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding-left: 24px;
 }
 
 // ================= START OF WIND BLOCK ========================

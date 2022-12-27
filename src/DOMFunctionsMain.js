@@ -6,6 +6,8 @@ import windIcon from "./assets/wind-speed.svg";
 import humidityIcon from "./assets/humidity-icon.svg";
 import {convertTemp, toggleTempUnit, tempUnit} from "./temperatures"
 
+let currentKelvin
+
 function typeInLoc() {
   const input = document.getElementById("location-input")
     input.addEventListener("keydown", (e) => {
@@ -21,10 +23,9 @@ function typeInLoc() {
 }
 typeInLoc();
 
-let Kelvin;
-
 async function displayCurrentWeather() {
   let data = await getCurrentWeather();
+  currentKelvin = data.main.temp
   displayWeatherDescription(data.weather[0].description);
   displayName(data.name, data.sys.country);
   displayTime(data.timezone);
@@ -73,4 +74,7 @@ function displayHumidity(hum) {
   document.querySelector(".humidity-icon").src = humidityIcon;
 }
 
-export { displayCurrentWeather };
+export {
+  displayCurrentWeather,
+  currentKelvin
+};
