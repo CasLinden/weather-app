@@ -23,8 +23,8 @@ function typeInLoc() {
 }
 typeInLoc();
 
-async function displayCurrentWeather() {
-  let data = await getCurrentWeather();
+async function displayCurrentWeather(geo) {
+  let data = await getCurrentWeather(geo);
   currentKelvin = data.main.temp
   displayWeatherDescription(data.weather[0].description);
   displayName(data.name, data.sys.country);

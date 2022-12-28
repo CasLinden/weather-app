@@ -4,20 +4,16 @@ import { convertTemp } from "./temperatures";
 
 let foreCastKelvins = []
 
-async function displayForecast() {
-  let data = await getFiveDayForecast();
+async function displayForecast(geo) {
+  let data = await getFiveDayForecast(geo);
   let fourDayData = fourDays(trimToday(data.list))
   createElements(fourDayData)
 }
 
-// We need to trim off data that is for today, meaning we only get forecast data for 4 full coming days
+// We need to trim off data about the remainder of today,  we only get forecast data for 4 full coming days
 
 function getDate(entry) {
   return entry.dt_txt.split(" ")[0]
-}
-
-function getMonth(entry) {
-  return getDate(entry).split("-")[1]
 }
 
 function getDayOfMonth(entry) {
@@ -124,9 +120,7 @@ function getAvgTemp(day) {
 function makeEntryDate(day) {
   let dateContainer = document.createElement('h4')
   dateContainer.classList.add('forecast-entry-date')
-  dateContainer.textContent = `${
-    daysOfWeek[new Date(day[3].dt_txt).getDay()]
-  } ${getDayOfMonth(day[0])}`;
+  dateContainer.textContent = `${daysOfWeek[new Date(day[3].dt_txt).getDay()]} ${getDayOfMonth(day[0])}`;
   return dateContainer
 }
 
@@ -148,7 +142,6 @@ function addDivisions() {
     element.style.borderRight = "1px solid rgba(255, 255, 255, 0.3)"
   })
 }
-
 
 export {
   displayForecast,

@@ -531,20 +531,16 @@ __webpack_require__.r(__webpack_exports__);
 
 let foreCastKelvins = []
 
-async function displayForecast() {
-  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getFiveDayForecast)();
+async function displayForecast(geo) {
+  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getFiveDayForecast)(geo);
   let fourDayData = fourDays(trimToday(data.list))
   createElements(fourDayData)
 }
 
-// We need to trim off data that is for today, meaning we only get forecast data for 4 full coming days
+// We need to trim off data about the remainder of today,  we only get forecast data for 4 full coming days
 
 function getDate(entry) {
   return entry.dt_txt.split(" ")[0]
-}
-
-function getMonth(entry) {
-  return getDate(entry).split("-")[1]
 }
 
 function getDayOfMonth(entry) {
@@ -651,9 +647,7 @@ function getAvgTemp(day) {
 function makeEntryDate(day) {
   let dateContainer = document.createElement('h4')
   dateContainer.classList.add('forecast-entry-date')
-  dateContainer.textContent = `${
-    daysOfWeek[new Date(day[3].dt_txt).getDay()]
-  } ${getDayOfMonth(day[0])}`;
+  dateContainer.textContent = `${daysOfWeek[new Date(day[3].dt_txt).getDay()]} ${getDayOfMonth(day[0])}`;
   return dateContainer
 }
 
@@ -675,7 +669,6 @@ function addDivisions() {
     element.style.borderRight = "1px solid rgba(255, 255, 255, 0.3)"
   })
 }
-
 
 
 
@@ -725,8 +718,8 @@ function typeInLoc() {
 }
 typeInLoc();
 
-async function displayCurrentWeather() {
-  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)();
+async function displayCurrentWeather(geo) {
+  let data = await (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.getCurrentWeather)(geo);
   currentKelvin = data.main.temp
   displayWeatherDescription(data.weather[0].description);
   displayName(data.name, data.sys.country);
@@ -789,12 +782,15 @@ function displayHumidity(hum) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "geoLoc": () => (/* binding */ geoLoc),
 /* harmony export */   "getCurrentWeather": () => (/* binding */ getCurrentWeather),
 /* harmony export */   "getFiveDayForecast": () => (/* binding */ getFiveDayForecast),
 /* harmony export */   "setNewLoc": () => (/* binding */ setNewLoc)
 /* harmony export */ });
 /* harmony import */ var _DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DOMFunctionsMain */ "./src/DOMFunctionsMain.js");
 /* harmony import */ var _DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DOMFunctionsForecast */ "./src/DOMFunctionsForecast.js");
+/* harmony import */ var _geolocation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./geolocation */ "./src/geolocation.js");
+
 
 
 
@@ -805,25 +801,38 @@ let loc = "Suginami";
 function setNewLoc(newLoc) {
   loc = newLoc;
   (0,_DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_0__.displayCurrentWeather)();
-  (0,_DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_1__.displayForecast)()
+  (0,_DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_1__.displayForecast)();
 }
 
-function buildURL() {
+function geoLoc() {
+  (0,_DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_0__.displayCurrentWeather)("geo");
+  (0,_DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_1__.displayForecast)("geo");
+}
+
+// geo param is only passed when calculating location from lat and long
+
+function buildURL(geo) {
+  if (geo) {
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${_geolocation__WEBPACK_IMPORTED_MODULE_2__.lat}&lon=${_geolocation__WEBPACK_IMPORTED_MODULE_2__.lon}&appid=${key}`;
+  }
   return `https://api.openweathermap.org/data/2.5/weather?q=${loc}&APPID=${key}`;
 }
 
-async function getCurrentWeather() {
-  let response = await fetch(buildURL());
+async function getCurrentWeather(geo) {
+  let response = await fetch(buildURL(geo));
   let data = await response.json();
   return data;
 }
 
-function buildForecastURL() {
+function buildForecastURL(geo) {
+  if (geo) {
+    return `https://api.openweathermap.org/data/2.5/forecast?lat=${_geolocation__WEBPACK_IMPORTED_MODULE_2__.lat}&lon=${_geolocation__WEBPACK_IMPORTED_MODULE_2__.lon}&appid=${key}`;
+  }
   return `https://api.openweathermap.org/data/2.5/forecast?q=${loc}&APPID=${key}`;
 }
 
-async function getFiveDayForecast() {
-  let response = await fetch(buildForecastURL());
+async function getFiveDayForecast(geo) {
+  let response = await fetch(buildForecastURL(geo));
   let data = await response.json();
   return data;
 }
@@ -880,6 +889,42 @@ function startClock(timeZone) {
     }, 1000);
   }
 }
+
+
+/***/ }),
+
+/***/ "./src/geolocation.js":
+/*!****************************!*\
+  !*** ./src/geolocation.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getLocation": () => (/* binding */ getLocation),
+/* harmony export */   "lat": () => (/* binding */ lat),
+/* harmony export */   "lon": () => (/* binding */ lon)
+/* harmony export */ });
+/* harmony import */ var _apifunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apifunctions */ "./src/apifunctions.js");
+
+
+let lat = 35.6995;
+let lon = 139.6355;
+
+function getLocation() {
+  if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  lat = position.coords.latitude;
+  lon = position.coords.longitude;
+  (0,_apifunctions__WEBPACK_IMPORTED_MODULE_0__.geoLoc)()
+}
+
 
 
 /***/ }),
@@ -1101,6 +1146,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DOMFunctionsMain */ "./src/DOMFunctionsMain.js");
 /* harmony import */ var _DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DOMFunctionsForecast */ "./src/DOMFunctionsForecast.js");
+/* harmony import */ var _geolocation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./geolocation */ "./src/geolocation.js");
+
 
 
 
@@ -1108,8 +1155,9 @@ __webpack_require__.r(__webpack_exports__);
 // display the weather (Suginami by default)
 (0,_DOMFunctionsMain__WEBPACK_IMPORTED_MODULE_1__.displayCurrentWeather)();
 (0,_DOMFunctionsForecast__WEBPACK_IMPORTED_MODULE_2__.displayForecast)()
+;(0,_geolocation__WEBPACK_IMPORTED_MODULE_3__.getLocation)()
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef6f6342499726b3eda95.js.map
+//# sourceMappingURL=bundle3a119fb8b162380ae71c.js.map
