@@ -794,7 +794,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const key = "13ef3f48c50704ff29636e4380808e39";
+const key = "13ef3f48c50704ff29636e4380808e39"
+// requires plugin configuration in webpack.config to work
 
 let loc = "Suginami";
 
@@ -1160,4 +1161,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle3a119fb8b162380ae71c.js.map
+//# sourceMappingURL=bundlee98196caa7f3c9aaf806.js.map
