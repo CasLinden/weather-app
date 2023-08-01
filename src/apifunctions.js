@@ -2,7 +2,8 @@ import { displayCurrentWeather } from "./DOMFunctionsMain";
 import { displayForecast } from "./DOMFunctionsForecast";
 import { getLocation, lat, lon } from "./geolocation";
 
-const key = "13ef3f48c50704ff29636e4380808e39";
+const key = process.env.OPENWEATHER_KEY
+// requires plugin configuration in webpack.config to work
 
 let loc = "Suginami";
 
